@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header matches the snapshot 1`] = `
+<div>
+  <header
+    class="sticky top-0 w-full h-16 z-50 flex justify-between items-center bg-[#fbfbfd] shadow-sm px-8 py-4"
+  >
+    <a
+      class="font-bold"
+      href="/"
+    >
+      PLAN MY TRIP
+    </a>
+    <img
+      alt="Yoann Moise Logo"
+      data-nimg="1"
+      decoding="async"
+      height="40"
+      loading="lazy"
+      src="/_next/image?url=%2Flogo.png&w=96&q=75"
+      srcset="/_next/image?url=%2Flogo.png&w=48&q=75 1x, /_next/image?url=%2Flogo.png&w=96&q=75 2x"
+      style="color: transparent;"
+      width="40"
+    />
+  </header>
+</div>
+`;

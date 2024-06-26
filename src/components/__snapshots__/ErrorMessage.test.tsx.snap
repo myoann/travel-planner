@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ErrorMessage matches the snapshot 1`] = `
+<div>
+  <div
+    class="px-8 text-red-500 text-lg"
+  >
+    This is an error message
+  </div>
+</div>
+`;

@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchBar matches the snapshot 1`] = `
+<div>
+  <input
+    class="w-full h-9 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-200"
+    placeholder="Search by continent, country, or city..."
+    type="text"
+    value=""
+  />
+</div>
+`;

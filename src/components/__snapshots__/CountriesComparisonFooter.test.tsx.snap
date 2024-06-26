@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CountriesComparisonFooter matches the snapshot 1`] = `
+<div>
+  <div
+    class="fixed bottom-0 w-full h-40 bg-white flex items-center justify-center gap-16 shadow-2xl"
+  >
+    <div
+      class="flex text-center"
+    >
+      <div
+        class="flex flex-col items-center w-32"
+      >
+        <div
+          class="relative"
+        >
+          <img
+            alt="France"
+            data-nimg="1"
+            decoding="async"
+            height="40"
+            loading="lazy"
+            src="/flags/fr.svg"
+            style="color: transparent;"
+            width="60"
+          />
+          <button
+            class="absolute top-0 right-0 bg-white rounded-full"
+            style="transform: translate(50%, -50%);"
+          >
+            <img
+              alt="Remove image"
+              data-nimg="1"
+              decoding="async"
+              height="16"
+              loading="lazy"
+              src="cross.svg"
+              style="color: transparent;"
+              width="16"
+            />
+          </button>
+        </div>
+        <p>
+          France
+        </p>
+      </div>
+      <span
+        class="mx-4 text-4xl self-center"
+      >
+        +
+      </span>
+      <div
+        class="flex flex-col items-center w-32"
+      >
+        <div
+          class="relative"
+        >
+          <img
+            alt="Singapore"
+            data-nimg="1"
+            decoding="async"
+            height="40"
+            loading="lazy"
+            src="/flags/sg.svg"
+            style="color: transparent;"
+            width="60"
+          />
+          <button
+            class="absolute top-0 right-0 bg-white rounded-full"
+            style="transform: translate(50%, -50%);"
+          >
+            <img
+              alt="Remove image"
+              data-nimg="1"
+              decoding="async"
+              height="16"
+              loading="lazy"
+              src="cross.svg"
+              style="color: transparent;"
+              width="16"
+            />
+          </button>
+        </div>
+        <p>
+          Singapore
+        </p>
+      </div>
+    </div>
+    <a
+      class="bg-[#1d1d1f] text-white px-8 py-4 rounded"
+      href="/country/compare/FR-SG"
+    >
+      See the comparison
+    </a>
+  </div>
+</div>
+`;
