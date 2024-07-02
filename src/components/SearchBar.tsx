@@ -1,28 +1,62 @@
 "use client";
 
-import { useState, ChangeEvent } from "react";
+import { useState, ChangeEvent, KeyboardEvent } from "react";
 
 type TProps = {
-  filterBySearch: (searchQuery: string) => void;
+  placeholder: string;
+  filterBySearch?: (searchQuery: string) => void;
+  onSubmit?: (searchQuery: string) => void;
 };
 
-export default function SearchBar({ filterBySearch }: TProps) {
+export default function SearchBar({
+  placeholder,
+  filterBySearch,
+  onSubmit,
+}: TProps) {
   const [searchQuery, setSearchQuery] = useState("");
 
   /** Handles the search input change */
   const handleSearchChange = (event: ChangeEvent<HTMLInputElement>) => {
     setSearchQuery(event.target.value);
 
-    filterBySearch(event.target.value);
+    if (filterBySearch) {
+      filterBySearch(event.target.value);
+    }
+  };
+
+  const handleKeyDown = (event: KeyboardEvent) => {
+    if (event.key === "Enter" && onSubmit) {
+      onSubmit(searchQuery);
+    }
+  };
+
+  const handleButtonClick = () => {
+    if (onSubmit) {
+      onSubmit(searchQuery);
+    }
   };
 
   return (
-    <input
-      type="text"
-      placeholder="Search by continent, country, or city..."
-      className="w-full h-9 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-200"
-      onChange={handleSearchChange}
-      value={searchQuery}
-    />
+    <div className="flex items-center w-full h-12 border border-gray-300 rounded shadow-md focus-within:ring focus-within:ring-blue-200">
+      <input
+        type="text"
+        placeholder={placeholder || "Search"}
+        className={`flex-grow h-full p-4 focus:outline-none ${
+          onSubmit ? "rounded-l" : "rounded"
+        }`}
+        onChange={handleSearchChange}
+        onKeyDown={handleKeyDown}
+        value={searchQuery}
+      />
+
+      {onSubmit && (
+        <button
+          className="h-full px-6 bg-blue-500 text-white rounded-r hover:bg-blue-700 focus:outline-none transition duration-300 ease-in-out"
+          onClick={handleButtonClick}
+        >
+          Find it
+        </button>
+      )}
+    </div>
   );
 }
