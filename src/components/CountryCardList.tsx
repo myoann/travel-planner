@@ -132,7 +132,7 @@ export default function CountryCardList({
         </span>
       </h3>
 
-      <div className="flex justify-between items-center px-8 mb-10 gap-8">
+      <div className="flex justify-between items-center px-8 mb-10 gap-8 sm:gap-4">
         <SearchBar
           filterBySearch={filterBySearch}
           placeholder="Search by continent, country, or city..."

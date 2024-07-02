@@ -6,11 +6,11 @@ exports[`CountryCard matches the snapshot 1`] = `
     class="flex flex-col bg-white rounded pb-4"
   >
     <a
-      class="w-[200px] sm:w-[150px] flex flex-col gap-2"
+      class="w-[200px] sm:w-[133px] flex flex-col gap-2"
       href="/country/FR"
     >
       <div
-        class="relative w-full h-[150px] sm:h-[115px]"
+        class="relative w-full h-[150px] sm:h-[100px]"
       >
         <img
           alt="France"

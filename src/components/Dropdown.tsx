@@ -32,9 +32,9 @@ export default function Dropdown({
   };
 
   return (
-    <div className="relative inline-block text-left w-64 z-30">
+    <div className="relative inline-block text-left w-64 z-30 sm:hidden">
       <button
-        className="inline-flex w-full justify-center gap-x-1.5 py-2 text-sm sm:text-xs font-semibold text-gray-900 hover:text-gray-950 hover:font-bold"
+        className="inline-flex w-full justify-center gap-x-1.5 py-2 text-sm font-semibold text-gray-900 hover:text-gray-950 hover:font-bold"
         id="menu-button"
         data-testid="dropdown"
         aria-expanded="true"
