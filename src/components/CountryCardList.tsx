@@ -102,17 +102,17 @@ export default function CountryCardList({
           <div className="font-light text-xs mb-4">
             Some examples you can ask:
             <div className="font-medium pt-1 pl-1">
-              "a country where I can see the house of Dracula",
+              &quot;a country where I can see the house of Dracula&quot;,
             </div>
             <div className="font-medium pl-1">
-              "the best place to eat pasta",
+              &quot;the best place to eat pasta&quot;,
             </div>
             <div className="font-medium pl-1">
-              "I want to go to the highest mountain of the world",
+              &quot;I want to go to the highest mountain of the world&quot;,
             </div>
             <div className="font-medium pl-1">
-              "I would like to visit the country where there are beautiful
-              landscapes"
+              &quot;I would like to visit the country where there are beautiful
+              landscapes&quot;
             </div>
           </div>
 
