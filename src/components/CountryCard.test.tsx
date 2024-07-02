@@ -45,4 +45,37 @@ describe("CountryCard", () => {
 
     expect(input).toBeInTheDocument();
   });
+
+  it("calls onCompare when the checkbox is clicked", () => {
+    render(<CountryCard {...defaultProps} />);
+
+    const input = screen.getByRole("checkbox", { name: "Compare" });
+    input.click();
+
+    expect(defaultProps.onCompare).toHaveBeenCalled();
+  });
+
+  it("disables the checkbox if isDisabled is true", () => {
+    render(<CountryCard {...defaultProps} isDisabled={true} />);
+
+    const input = screen.getByRole("checkbox", { name: "Compare" });
+
+    expect(input).toBeDisabled();
+  });
+
+  it("checks the checkbox if isChecked is true", () => {
+    render(<CountryCard {...defaultProps} isChecked={true} />);
+
+    const input = screen.getByRole("checkbox", { name: "Compare" });
+
+    expect(input).toBeChecked();
+  });
+
+  it("does not check the checkbox if isChecked is false", () => {
+    render(<CountryCard {...defaultProps} isChecked={false} />);
+
+    const input = screen.getByRole("checkbox", { name: "Compare" });
+
+    expect(input).not.toBeChecked();
+  });
 });
