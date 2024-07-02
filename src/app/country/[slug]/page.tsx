@@ -61,8 +61,8 @@ export default async function Page({ params }: { params: { slug: string } }) {
         </div>
       )}
 
-      <div className="flex px-8 pt-8 pb-16">
-        <div className="flex flex-col gap-1 text-xl text-[#86868b] w-2/3">
+      <div className="flex px-8 pt-8 pb-16 sm:flex-col sm:gap-8">
+        <div className="flex flex-col gap-1 text-xl text-[#86868b] w-2/3 sm:w-full">
           <h2 className="text-4xl text-black mb-2">
             {result.data.country.emoji} {result.data.country.name}{" "}
           </h2>
@@ -118,7 +118,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
           </p>
         </div>
 
-        <div className="flex flex-col gap-2 w-1/3">
+        <div className="flex flex-col gap-2 w-1/3 sm:w-full">
           <a
             href={`https://en.wikipedia.org/wiki/${result.data.country.name}`}
             className="bg-[#f8f9fa] hover:bg-white text-[#202122] px-2 py-4 rounded border border-[#a2a9b1] text-center"

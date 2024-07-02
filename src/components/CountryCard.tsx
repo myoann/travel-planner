@@ -18,8 +18,11 @@ export default function CountryCard({
 }: TProps) {
   return (
     <div className="flex flex-col bg-white rounded pb-4">
-      <a href={`/country/${code}`} className="w-[200px] flex flex-col gap-2">
-        <div className="relative w-full h-[150px]">
+      <a
+        href={`/country/${code}`}
+        className="w-[200px] sm:w-[150px] flex flex-col gap-2"
+      >
+        <div className="relative w-full h-[150px] sm:h-[115px]">
           <Image
             src={`/flags/${code.toLowerCase()}.svg`}
             alt={name}
