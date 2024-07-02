@@ -94,7 +94,7 @@ export default function CountryCardList({
         <div className="mx-8 mb-10">
           <h3 className="text-xl mt-12 mb-4">
             Find your dream destination{" "}
-            <span className="font-black text-blue-500">
+            <span className="font-black text-blue-500 sm:inline-block">
               with our AI recommendation
             </span>
           </h3>
@@ -127,7 +127,9 @@ export default function CountryCardList({
 
       <h3 className="text-xl ml-8 mt-10 mb-4">
         Find your dream destination{" "}
-        <span className="font-black text-green-500">by browsing</span>
+        <span className="font-black text-green-500 sm:inline-block">
+          by browsing
+        </span>
       </h3>
 
       <div className="flex justify-between items-center px-8 mb-10 gap-8">
