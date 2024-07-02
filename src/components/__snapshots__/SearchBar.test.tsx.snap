@@ -2,11 +2,15 @@
 
 exports[`SearchBar matches the snapshot 1`] = `
 <div>
-  <input
-    class="w-full h-9 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-200"
-    placeholder="Search by continent, country, or city..."
-    type="text"
-    value=""
-  />
+  <div
+    class="flex items-center w-full h-12 border border-gray-300 rounded shadow-md focus-within:ring focus-within:ring-blue-200"
+  >
+    <input
+      class="flex-grow h-full p-4 focus:outline-none rounded"
+      placeholder="Search"
+      type="text"
+      value=""
+    />
+  </div>
 </div>
 `;

@@ -5,6 +5,7 @@ import { TCountry } from "@/types";
 import CountryCardList from "./CountryCardList";
 
 const defaultProps = {
+  findRandomCountry: jest.fn(),
   continentsOptions: [
     {
       key: "EU",

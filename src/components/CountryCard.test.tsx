@@ -9,6 +9,8 @@ const defaultProps = {
     code: "FR",
     name: "France",
   } as TCountry,
+  isChecked: false,
+  isDisabled: false,
   onCompare: jest.fn(),
 };
 
@@ -36,11 +38,11 @@ describe("CountryCard", () => {
     expect(name).toBeInTheDocument();
   });
 
-  it("displays a button to compare the country card", () => {
+  it("displays a checkbox to compare the country card", () => {
     render(<CountryCard {...defaultProps} />);
 
-    const button = screen.getByRole("button", { name: "Compare" });
+    const input = screen.getByRole("checkbox", { name: "Compare" });
 
-    expect(button).toBeInTheDocument();
+    expect(input).toBeInTheDocument();
   });
 });

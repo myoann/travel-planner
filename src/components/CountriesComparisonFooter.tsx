@@ -27,11 +27,11 @@ export default function CountriesComparisonFooter({
 }: TProps) {
   return (
     <div className="fixed bottom-0 w-full bg-white shadow-2xl z-50">
-      <p className="w-full flex items-center justify-center h-12 bg-[#1d1d1f] text-white font-bold">
+      <p className="w-full flex items-center justify-center h-10 bg-[#1d1d1f] text-white font-bold">
         Compare countries ({selectedCountries.length}/2)
       </p>
 
-      <div className="h-36 bg-white flex items-center justify-center gap-16">
+      <div className="h-32 bg-white flex items-center justify-center gap-16">
         <div className="flex text-center">
           <div className="flex flex-col items-center w-32">
             <div className="relative">
