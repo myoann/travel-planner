@@ -52,11 +52,14 @@ export default async function Home() {
 
   return (
     <main className="bg-[#f5f5f7]">
-      <h1 className="px-8 pt-16 pb-6 text-6xl">
-        The perfect country search for your special trip
+      <h1 className="px-8 pt-16 pb-6 text-6xl sm:pt-8 sm:pb-3 sm:text-4xl">
+        The perfect country search{" "}
+        <span className="bg-black text-white sm:inline-block px-2 py-1">
+          for your special trip
+        </span>
       </h1>
 
-      <p className="px-8 text-3xl">
+      <p className="px-8 text-3xl sm:hidden">
         Discover dreamy holiday countries and cities all over the world
       </p>
 
