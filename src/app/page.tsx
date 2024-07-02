@@ -52,7 +52,7 @@ export default async function Home() {
 
   return (
     <main className="bg-[#f5f5f7]">
-      <h1 className="px-8 pt-16 pb-6 text-6xl sm:pt-8 sm:pb-3 sm:text-4xl">
+      <h1 className="px-8 pt-16 pb-6 text-6xl sm:pt-8 sm:pb-3 sm:text-3xl">
         The perfect country search{" "}
         <span className="bg-black text-white sm:inline-block px-2 py-1">
           for your special trip
