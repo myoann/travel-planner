@@ -8,7 +8,7 @@ exports[`Dropdown matches the snapshot 1`] = `
     <button
       aria-expanded="true"
       aria-haspopup="true"
-      class="inline-flex w-full justify-center gap-x-1.5 px-3 py-2 text-sm font-semibold text-gray-900 hover:text-gray-950 hover:font-bold"
+      class="inline-flex w-full justify-center gap-x-1.5 py-2 text-sm sm:text-xs font-semibold text-gray-900 hover:text-gray-950 hover:font-bold"
       data-testid="dropdown"
       id="menu-button"
     >
