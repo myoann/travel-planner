@@ -20,9 +20,9 @@ export default function CountryCard({
     <div className="flex flex-col bg-white rounded pb-4">
       <a
         href={`/country/${code}`}
-        className="w-[200px] sm:w-[133px] flex flex-col gap-2"
+        className="md:w-[200px] sm:w-[133px] flex flex-col gap-2"
       >
-        <div className="relative w-full h-[150px] sm:h-[100px]">
+        <div className="relative w-full md:h-[150px] sm:h-[100px]">
           <Image
             src={`/flags/${code.toLowerCase()}.svg`}
             alt={name}

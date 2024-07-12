@@ -51,7 +51,7 @@ export default function SearchBar({
 
       {onSubmit && (
         <button
-          className="h-full px-6 sm:px-3 bg-blue-500 text-white rounded-r hover:bg-blue-700 focus:outline-none transition duration-300 ease-in-out"
+          className="h-full md:px-6 sm:px-3 bg-blue-500 text-white rounded-r hover:bg-blue-700 focus:outline-none transition duration-300 ease-in-out"
           onClick={handleButtonClick}
         >
           Find it

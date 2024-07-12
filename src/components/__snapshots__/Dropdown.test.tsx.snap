@@ -3,7 +3,7 @@
 exports[`Dropdown matches the snapshot 1`] = `
 <div>
   <div
-    class="relative inline-block text-left w-64 z-30 sm:hidden"
+    class="relative inline-block text-left w-64 z-30 md:inline sm:hidden"
   >
     <button
       aria-expanded="true"

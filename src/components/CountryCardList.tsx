@@ -92,7 +92,7 @@ export default function CountryCardList({
     <div>
       {hasOpenAiKey && (
         <div className="mx-8 mb-10">
-          <h3 className="text-xl mt-12 sm:mt-6 mb-4">
+          <h3 className="text-xl md:mt-12 sm:mt-6 mb-4">
             Find your dream destination{" "}
             <span className="font-black text-blue-500 sm:inline-block">
               with our AI recommendation
@@ -132,7 +132,7 @@ export default function CountryCardList({
         </span>
       </h3>
 
-      <div className="flex justify-between items-center px-8 mb-10 gap-8 sm:gap-4">
+      <div className="flex justify-between items-center px-8 mb-10 md:gap-8 sm:gap-4">
         <SearchBar
           filterBySearch={filterBySearch}
           placeholder="Search by continent, country, or city..."

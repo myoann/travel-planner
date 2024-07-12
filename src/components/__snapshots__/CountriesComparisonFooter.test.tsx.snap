@@ -13,7 +13,7 @@ exports[`CountriesComparisonFooter matches the snapshot 1`] = `
       /2)
     </p>
     <div
-      class="h-32 sm:h-52 bg-white flex items-center justify-center gap-16 sm:flex-col sm:gap-4"
+      class="h-32 sm:h-52 bg-white flex items-center justify-center md:gap-16 md:flex-row sm:flex-col sm:gap-4"
     >
       <div
         class="flex text-center"

@@ -31,7 +31,7 @@ export default function CountriesComparisonFooter({
         Compare countries ({selectedCountries.length}/2)
       </p>
 
-      <div className="h-32 sm:h-52 bg-white flex items-center justify-center gap-16 sm:flex-col sm:gap-4">
+      <div className="h-32 sm:h-52 bg-white flex items-center justify-center md:gap-16 md:flex-row sm:flex-col sm:gap-4">
         <div className="flex text-center">
           <div className="flex flex-col items-center w-32">
             <div className="relative">
