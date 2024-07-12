@@ -3,10 +3,10 @@
 exports[`SearchBar matches the snapshot 1`] = `
 <div>
   <div
-    class="flex items-center w-full h-12 border border-gray-300 rounded shadow-md focus-within:ring focus-within:ring-blue-200"
+    class="flex h-12 w-full items-center rounded border border-gray-300 shadow-md focus-within:ring focus-within:ring-blue-200"
   >
     <input
-      class="flex-grow h-full p-4 focus:outline-none rounded"
+      class="h-full flex-grow p-4 focus:outline-none rounded"
       placeholder="Search"
       type="text"
       value=""

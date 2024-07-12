@@ -3,23 +3,23 @@
 exports[`CountriesComparisonFooter matches the snapshot 1`] = `
 <div>
   <div
-    class="fixed bottom-0 w-full bg-white shadow-2xl z-50"
+    class="fixed bottom-0 z-50 w-full bg-white shadow-2xl"
   >
     <p
-      class="w-full flex items-center justify-center h-10 bg-[#1d1d1f] text-white font-bold"
+      class="flex h-10 w-full items-center justify-center bg-[#1d1d1f] font-bold text-white"
     >
       Compare countries (
       2
       /2)
     </p>
     <div
-      class="h-32 sm:h-52 bg-white flex items-center justify-center md:gap-16 md:flex-row sm:flex-col sm:gap-4"
+      class="flex h-32 items-center justify-center bg-white sm:h-52 sm:flex-col sm:gap-4 md:flex-row md:gap-16"
     >
       <div
         class="flex text-center"
       >
         <div
-          class="flex flex-col items-center w-32"
+          class="flex w-32 flex-col items-center"
         >
           <div
             class="relative"
@@ -35,7 +35,7 @@ exports[`CountriesComparisonFooter matches the snapshot 1`] = `
               width="60"
             />
             <button
-              class="absolute top-0 right-0 bg-white rounded-full"
+              class="absolute right-0 top-0 rounded-full bg-white"
               style="transform: translate(50%, -50%);"
             >
               <img
@@ -55,12 +55,12 @@ exports[`CountriesComparisonFooter matches the snapshot 1`] = `
           </p>
         </div>
         <span
-          class="mx-4 text-4xl self-center"
+          class="mx-4 self-center text-4xl"
         >
           +
         </span>
         <div
-          class="flex flex-col items-center w-32"
+          class="flex w-32 flex-col items-center"
         >
           <div
             class="relative"
@@ -76,7 +76,7 @@ exports[`CountriesComparisonFooter matches the snapshot 1`] = `
               width="60"
             />
             <button
-              class="absolute top-0 right-0 bg-white rounded-full"
+              class="absolute right-0 top-0 rounded-full bg-white"
               style="transform: translate(50%, -50%);"
             >
               <img
@@ -97,7 +97,7 @@ exports[`CountriesComparisonFooter matches the snapshot 1`] = `
         </div>
       </div>
       <a
-        class="bg-[#1d1d1f] text-white px-8 py-4 rounded"
+        class="rounded bg-[#1d1d1f] px-8 py-4 text-white"
         href="/country/compare/FR-SG"
       >
         See the comparison

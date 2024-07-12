@@ -3,12 +3,12 @@
 exports[`Dropdown matches the snapshot 1`] = `
 <div>
   <div
-    class="relative inline-block text-left w-64 z-30 md:inline sm:hidden"
+    class="relative z-30 inline-block w-64 text-left sm:hidden md:inline"
   >
     <button
       aria-expanded="true"
       aria-haspopup="true"
-      class="inline-flex w-full justify-center gap-x-1.5 py-2 text-sm font-semibold text-gray-900 hover:text-gray-950 hover:font-bold"
+      class="inline-flex w-full justify-center gap-x-1.5 py-2 text-sm font-semibold text-gray-900 hover:font-bold hover:text-gray-950"
       data-testid="dropdown"
       id="menu-button"
     >
@@ -27,12 +27,12 @@ exports[`Dropdown matches the snapshot 1`] = `
     <div
       aria-labelledby="menu-button"
       aria-orientation="vertical"
-      class="hidden absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none py-1"
+      class="hidden absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
       role="menu"
       tabindex="-1"
     >
       <button
-        class="w-full text-left block px-4 py-2 text-sm hover:bg-gray-100 hover:text-gray-900 text-gray-700 false"
+        class="block w-full px-4 py-2 text-left text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 false"
         data-testid="dropdown-option"
         id="menu-item-1"
         role="menuitem"

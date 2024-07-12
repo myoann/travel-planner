@@ -3,14 +3,14 @@
 exports[`CountryCard matches the snapshot 1`] = `
 <div>
   <div
-    class="flex flex-col bg-white rounded pb-4"
+    class="flex flex-col rounded bg-white pb-4"
   >
     <a
-      class="md:w-[200px] sm:w-[133px] flex flex-col gap-2"
+      class="flex flex-col gap-2 sm:w-[133px] md:w-[200px]"
       href="/country/FR"
     >
       <div
-        class="relative w-full md:h-[150px] sm:h-[100px]"
+        class="relative w-full sm:h-[100px] md:h-[150px]"
       >
         <img
           alt="France"
@@ -24,20 +24,20 @@ exports[`CountryCard matches the snapshot 1`] = `
           width="200"
         />
         <div
-          class="absolute inset-0 bg-gradient-to-t from-black/25 to-transparent z-20"
+          class="absolute inset-0 z-20 bg-gradient-to-t from-black/25 to-transparent"
         />
       </div>
       <p
-        class="text-wrap px-4 font-semibold line-clamp-2 h-12"
+        class="line-clamp-2 h-12 text-wrap px-4 font-semibold"
       >
         France
       </p>
     </a>
     <label
-      class="flex items-center mx-4 mt-2"
+      class="mx-4 mt-2 flex items-center"
     >
       <input
-        class="h-6 w-6 text-[#1d1d1f] rounded border-gray-300"
+        class="h-6 w-6 rounded border-gray-300 text-[#1d1d1f]"
         type="checkbox"
       />
       <span

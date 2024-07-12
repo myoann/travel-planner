@@ -13,8 +13,8 @@
   "dependencies": {
     "@urql/next": "^1.1.1",
     "graphql": "^16.9.0",
-    "next": "^14.2.4",
-    "openai": "^4.52.2",
+    "next": "^14.2.5",
+    "openai": "^4.52.7",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "unsplash-js": "^7.0.19",
@@ -24,7 +24,7 @@
     "@testing-library/jest-dom": "^6.4.6",
     "@testing-library/react": "^16.0.0",
     "@types/jest": "^29.5.12",
-    "@types/node": "^20.14.9",
+    "@types/node": "^20.14.10",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "eslint": "^8.57.0",
@@ -38,6 +38,6 @@
     "tailwindcss": "^3.4.4",
     "typescript": "^5.5.3",
     "ts-node": "^10.9.2",
-    "ts-jest": "^29.1.5"
+    "ts-jest": "^29.2.2"
   }
 }

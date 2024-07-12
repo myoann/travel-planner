@@ -3,7 +3,7 @@
 exports[`ErrorMessage matches the snapshot 1`] = `
 <div>
   <div
-    class="px-8 text-red-500 text-lg"
+    class="px-8 text-lg text-red-500"
   >
     This is an error message
   </div>
