@@ -37,11 +37,11 @@ export default function SearchBar({
   };
 
   return (
-    <div className="flex items-center w-full h-12 border border-gray-300 rounded shadow-md focus-within:ring focus-within:ring-blue-200">
+    <div className="flex h-12 w-full items-center rounded border border-gray-300 shadow-md focus-within:ring focus-within:ring-blue-200">
       <input
         type="text"
         placeholder={placeholder || "Search"}
-        className={`flex-grow h-full p-4 focus:outline-none ${
+        className={`h-full flex-grow p-4 focus:outline-none ${
           onSubmit ? "rounded-l" : "rounded"
         }`}
         onChange={handleSearchChange}
@@ -51,7 +51,7 @@ export default function SearchBar({
 
       {onSubmit && (
         <button
-          className="h-full md:px-6 sm:px-3 bg-blue-500 text-white rounded-r hover:bg-blue-700 focus:outline-none transition duration-300 ease-in-out"
+          className="h-full rounded-r bg-blue-500 text-white transition duration-300 ease-in-out hover:bg-blue-700 focus:outline-none sm:px-3 md:px-6"
           onClick={handleButtonClick}
         >
           Find it

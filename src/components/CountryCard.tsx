@@ -17,12 +17,12 @@ export default function CountryCard({
   onCompare,
 }: TProps) {
   return (
-    <div className="flex flex-col bg-white rounded pb-4">
+    <div className="flex flex-col rounded bg-white pb-4">
       <a
         href={`/country/${code}`}
-        className="md:w-[200px] sm:w-[133px] flex flex-col gap-2"
+        className="flex flex-col gap-2 sm:w-[133px] md:w-[200px]"
       >
-        <div className="relative w-full md:h-[150px] sm:h-[100px]">
+        <div className="relative w-full sm:h-[100px] md:h-[150px]">
           <Image
             src={`/flags/${code.toLowerCase()}.svg`}
             alt={name}
@@ -30,19 +30,19 @@ export default function CountryCard({
             height={150}
             className="relative z-10 rounded-tl rounded-tr"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/25 to-transparent z-20"></div>
+          <div className="absolute inset-0 z-20 bg-gradient-to-t from-black/25 to-transparent"></div>
         </div>
 
-        <p className="text-wrap px-4 font-semibold line-clamp-2 h-12">{name}</p>
+        <p className="line-clamp-2 h-12 text-wrap px-4 font-semibold">{name}</p>
       </a>
 
-      <label className="flex items-center mx-4 mt-2">
+      <label className="mx-4 mt-2 flex items-center">
         <input
           type="checkbox"
           checked={isChecked}
           disabled={isDisabled}
           onChange={onCompare}
-          className="h-6 w-6 text-[#1d1d1f] rounded border-gray-300"
+          className="h-6 w-6 rounded border-gray-300 text-[#1d1d1f]"
         />
 
         <span className="ml-2 text-sm font-medium text-[#1d1d1f]">Compare</span>

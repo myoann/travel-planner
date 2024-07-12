@@ -32,9 +32,9 @@ export default function Dropdown({
   };
 
   return (
-    <div className="relative inline-block text-left w-64 z-30 md:inline sm:hidden">
+    <div className="relative z-30 inline-block w-64 text-left sm:hidden md:inline">
       <button
-        className="inline-flex w-full justify-center gap-x-1.5 py-2 text-sm font-semibold text-gray-900 hover:text-gray-950 hover:font-bold"
+        className="inline-flex w-full justify-center gap-x-1.5 py-2 text-sm font-semibold text-gray-900 hover:font-bold hover:text-gray-950"
         id="menu-button"
         data-testid="dropdown"
         aria-expanded="true"
@@ -49,7 +49,7 @@ export default function Dropdown({
       <div
         className={`${
           isOpen ? "block" : "hidden"
-        } absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none py-1`}
+        } absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none`}
         role="menu"
         aria-orientation="vertical"
         aria-labelledby="menu-button"
@@ -57,9 +57,9 @@ export default function Dropdown({
       >
         {options.map((option) => (
           <button
-            className={`w-full text-left block px-4 py-2 text-sm hover:bg-gray-100 hover:text-gray-900 text-gray-700 ${
+            className={`block w-full px-4 py-2 text-left text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900 ${
               selectedOption?.value === option.value &&
-              "bg-gray-200 text-gray-900 font-bold hover:bg-gray-200"
+              "bg-gray-200 font-bold text-gray-900 hover:bg-gray-200"
             }`}
             role="menuitem"
             tabIndex={-1}

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <header className="sticky top-0 w-full h-16 z-50 flex justify-between items-center bg-[#fbfbfd] shadow-sm px-8 py-4">
+    <header className="sticky top-0 z-50 flex h-16 w-full items-center justify-between bg-[#fbfbfd] px-8 py-4 shadow-sm">
       <a href="/" className="font-bold">
         PLAN MY TRIP
       </a>

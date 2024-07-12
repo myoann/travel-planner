@@ -6,7 +6,7 @@ const openai = new OpenAI({
 
 export const getCountryDetailsWithOpenAI = async (
   countryName: string,
-  countryCode: string
+  countryCode: string,
 ) => {
   const chatCompletion = await openai.chat.completions.create({
     messages: [
@@ -59,7 +59,7 @@ export const findSuitableCountryWithOpenAI = async (content: string) => {
     }
 
     throw new Error(
-      "Unable to get a valid two-character country code from OpenAI after multiple attempts"
+      "Unable to get a valid two-character country code from OpenAI after multiple attempts",
     );
   } catch (error) {
     console.error("Error finding suitable country:", error);

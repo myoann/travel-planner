@@ -31,7 +31,7 @@ const defaultProps = {
 describe("CountriesComparisonFooter", () => {
   it("matches the snapshot", () => {
     const { container } = render(
-      <CountriesComparisonFooter {...defaultProps} />
+      <CountriesComparisonFooter {...defaultProps} />,
     );
 
     expect(container).toMatchSnapshot();
@@ -71,7 +71,7 @@ describe("CountriesComparisonFooter", () => {
       <CountriesComparisonFooter
         selectedCountries={selectedCountries}
         removeCountry={defaultProps.removeCountry}
-      />
+      />,
     );
 
     const message = screen.getByText("Select one more country to compare");

@@ -47,7 +47,7 @@ function CountryMainInfos({
       </h1>
 
       {photo && (
-        <div className="relative w-full h-96">
+        <div className="relative h-96 w-full">
           <Image
             src={photo.urls.regular}
             alt={`Photo of ${country.capital}`}
@@ -73,7 +73,7 @@ function CountryDetailedSection({
 }) {
   return (
     <div>
-      <h3 className="font-bold pb-4 mb-8 border-b border-[#e8e8ed]">{title}</h3>
+      <h3 className="mb-8 border-b border-[#e8e8ed] pb-4 font-bold">{title}</h3>
 
       {children}
     </div>
@@ -91,11 +91,11 @@ export default async function Page({ params }: { params: { slug: string } }) {
 
   const firstCountryRes = await getClient().query(
     CountryQuery(countryCode1),
-    {}
+    {},
   );
   const secondCountryRes = await getClient().query(
     CountryQuery(countryCode2),
-    {}
+    {},
   );
 
   if (!firstCountryRes?.data?.country) {
@@ -116,17 +116,17 @@ export default async function Page({ params }: { params: { slug: string } }) {
   const secondCountry = secondCountryRes.data.country;
 
   const firstCapitalPhoto = await getPhoto(
-    `${firstCountry.name} ${firstCountry.capital} city`
+    `${firstCountry.name} ${firstCountry.capital} city`,
   );
 
   const secondCapitalPhoto = await getPhoto(
-    `${secondCountry.name} ${secondCountry.capital} city`
+    `${secondCountry.name} ${secondCountry.capital} city`,
   );
 
   return (
-    <div className="pt-8 pb-16">
-      <div className="flex px-16 gap-8">
-        <div className="w-1/2 ">
+    <div className="pb-16 pt-8">
+      <div className="flex gap-8 px-16">
+        <div className="w-1/2">
           <CountryMainInfos country={firstCountry} photo={firstCapitalPhoto} />
         </div>
 
@@ -138,10 +138,10 @@ export default async function Page({ params }: { params: { slug: string } }) {
         </div>
       </div>
 
-      <div className="flex flex-col px-16 gap-8 mt-8">
+      <div className="mt-8 flex flex-col gap-8 px-16">
         <CountryDetailedSection title="General Information">
-          <div className="w-full flex gap-8">
-            <div className="flex flex-col w-1/2 gap-2">
+          <div className="flex w-full gap-8">
+            <div className="flex w-1/2 flex-col gap-2">
               <div className="flex flex-col">
                 <strong>Country name (english)</strong>
                 <span>{firstCountry.name}</span>
@@ -161,7 +161,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
               </div>
             </div>
 
-            <div className="flex flex-col w-1/2 gap-2">
+            <div className="flex w-1/2 flex-col gap-2">
               <div className="flex flex-col">
                 <strong>Country name (english)</strong>
                 <span>{secondCountry.name}</span>
@@ -183,8 +183,8 @@ export default async function Page({ params }: { params: { slug: string } }) {
         </CountryDetailedSection>
 
         <CountryDetailedSection title="Geographical Information">
-          <div className="w-full flex gap-8">
-            <div className="flex flex-col w-1/2 gap-2">
+          <div className="flex w-full gap-8">
+            <div className="flex w-1/2 flex-col gap-2">
               <div className="flex flex-col">
                 <strong>Continent</strong>
                 <span>{firstCountry.continent.name}</span>
@@ -195,7 +195,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
               </div>
             </div>
 
-            <div className="flex flex-col w-1/2 gap-2">
+            <div className="flex w-1/2 flex-col gap-2">
               <div className="flex flex-col">
                 <strong>Continent</strong>
                 <span>{secondCountry.continent.name}</span>
@@ -209,8 +209,8 @@ export default async function Page({ params }: { params: { slug: string } }) {
         </CountryDetailedSection>
 
         <CountryDetailedSection title="Communication">
-          <div className="w-full flex gap-8">
-            <div className="flex flex-col w-1/2 gap-2">
+          <div className="flex w-full gap-8">
+            <div className="flex w-1/2 flex-col gap-2">
               <div className="flex flex-col">
                 <strong>Telephone Prefix</strong>
                 <span>+{firstCountry.phone}</span>
@@ -227,7 +227,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
               </div>
             </div>
 
-            <div className="flex flex-col w-1/2 gap-2">
+            <div className="flex w-1/2 flex-col gap-2">
               <div className="flex flex-col">
                 <strong>Telephone Prefix</strong>
                 <span>+{secondCountry.phone}</span>

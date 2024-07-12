@@ -22,7 +22,7 @@ describe("SearchBar", () => {
 
   it("renders a button if onSubmit is given", () => {
     const { container } = render(
-      <SearchBar {...defaultProps} onSubmit={jest.fn()} />
+      <SearchBar {...defaultProps} onSubmit={jest.fn()} />,
     );
 
     expect(container.querySelector("button")).toBeInTheDocument();

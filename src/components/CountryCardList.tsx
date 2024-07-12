@@ -26,20 +26,20 @@ export default function CountryCardList({
   const [displayedCountries, setDisplayedCountries] =
     useState<TCountry[]>(countries);
   const [selectedContinent, setSelectedContinent] = useState<TOption | null>(
-    null
+    null,
   );
 
   /** Toggles the selection of a country */
   const toggleCountrySelection = (
     country: TCountry,
-    event?: ChangeEvent<HTMLInputElement>
+    event?: ChangeEvent<HTMLInputElement>,
   ) => {
     event?.stopPropagation();
     const isSelected = selectedCountries.find((c) => c.code === country.code);
 
     if (isSelected) {
       setSelectedCountries(
-        selectedCountries.filter((c) => c.code !== country.code)
+        selectedCountries.filter((c) => c.code !== country.code),
       );
     } else if (selectedCountries.length < 2) {
       setSelectedCountries([...selectedCountries, country]);
@@ -54,8 +54,8 @@ export default function CountryCardList({
     } else {
       setDisplayedCountries(
         countries.filter(
-          (country) => country.continent.code === continent.value
-        )
+          (country) => country.continent.code === continent.value,
+        ),
       );
       setSelectedContinent(continent);
     }
@@ -83,8 +83,8 @@ export default function CountryCardList({
   const removeCountry = (countryToRemove: TCountry) => {
     setSelectedCountries(
       selectedCountries.filter(
-        (country) => country.code !== countryToRemove.code
-      )
+        (country) => country.code !== countryToRemove.code,
+      ),
     );
   };
 
@@ -92,25 +92,25 @@ export default function CountryCardList({
     <div>
       {hasOpenAiKey && (
         <div className="mx-8 mb-10">
-          <h3 className="text-xl md:mt-12 sm:mt-6 mb-4">
+          <h3 className="mb-4 text-xl sm:mt-6 md:mt-12">
             Find your dream destination{" "}
             <span className="font-black text-blue-500 sm:inline-block">
               with our AI recommendation
             </span>
           </h3>
 
-          <div className="font-light text-xs mb-4">
+          <div className="mb-4 text-xs font-light">
             Some examples you can ask:
-            <div className="font-medium pt-1 pl-1">
+            <div className="pl-1 pt-1 font-medium">
               &quot;a country where I can see the house of Dracula&quot;,
             </div>
-            <div className="font-medium pl-1">
+            <div className="pl-1 font-medium">
               &quot;the best place to eat pasta&quot;,
             </div>
-            <div className="font-medium pl-1">
+            <div className="pl-1 font-medium">
               &quot;I want to go to the highest mountain of the world&quot;,
             </div>
-            <div className="font-medium pl-1">
+            <div className="pl-1 font-medium">
               &quot;I would like to visit the country where there are beautiful
               landscapes&quot;
             </div>
@@ -125,14 +125,14 @@ export default function CountryCardList({
 
       {hasOpenAiKey && <hr className="mx-8 my-8 border-gray-300" />}
 
-      <h3 className="text-xl ml-8 mt-10 mb-4">
+      <h3 className="mb-4 ml-8 mt-10 text-xl">
         Find your dream destination{" "}
         <span className="font-black text-green-500 sm:inline-block">
           by browsing
         </span>
       </h3>
 
-      <div className="flex justify-between items-center px-8 mb-10 md:gap-8 sm:gap-4">
+      <div className="mb-10 flex items-center justify-between px-8 sm:gap-4 md:gap-8">
         <SearchBar
           filterBySearch={filterBySearch}
           placeholder="Search by continent, country, or city..."
@@ -146,10 +146,10 @@ export default function CountryCardList({
         />
       </div>
 
-      <ul className="w-full flex flex-wrap items-center gap-8 px-8">
+      <ul className="flex w-full flex-wrap items-center gap-8 px-8">
         {displayedCountries.map((country) => {
           const isChecked = !!selectedCountries.find(
-            (c) => c.code === country.code
+            (c) => c.code === country.code,
           );
 
           return (

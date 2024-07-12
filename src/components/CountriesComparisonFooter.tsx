@@ -13,7 +13,7 @@ function RemoveButton({ onClick }: { onClick: () => void }) {
   return (
     <button
       onClick={onClick}
-      className="absolute top-0 right-0 bg-white rounded-full"
+      className="absolute right-0 top-0 rounded-full bg-white"
       style={{ transform: "translate(50%, -50%)" }}
     >
       <Image src="cross.svg" alt="Remove image" width={16} height={16} />
@@ -26,14 +26,14 @@ export default function CountriesComparisonFooter({
   removeCountry,
 }: TProps) {
   return (
-    <div className="fixed bottom-0 w-full bg-white shadow-2xl z-50">
-      <p className="w-full flex items-center justify-center h-10 bg-[#1d1d1f] text-white font-bold">
+    <div className="fixed bottom-0 z-50 w-full bg-white shadow-2xl">
+      <p className="flex h-10 w-full items-center justify-center bg-[#1d1d1f] font-bold text-white">
         Compare countries ({selectedCountries.length}/2)
       </p>
 
-      <div className="h-32 sm:h-52 bg-white flex items-center justify-center md:gap-16 md:flex-row sm:flex-col sm:gap-4">
+      <div className="flex h-32 items-center justify-center bg-white sm:h-52 sm:flex-col sm:gap-4 md:flex-row md:gap-16">
         <div className="flex text-center">
-          <div className="flex flex-col items-center w-32">
+          <div className="flex w-32 flex-col items-center">
             <div className="relative">
               <Image
                 src={`/flags/${selectedCountries[0].code.toLowerCase()}.svg`}
@@ -50,10 +50,10 @@ export default function CountriesComparisonFooter({
             <p>{selectedCountries[0].name}</p>
           </div>
 
-          <span className="mx-4 text-4xl self-center">+</span>
+          <span className="mx-4 self-center text-4xl">+</span>
 
           {selectedCountries.length > 1 ? (
-            <div className="flex flex-col items-center w-32">
+            <div className="flex w-32 flex-col items-center">
               <div className="relative">
                 <Image
                   src={`/flags/${selectedCountries[1].code.toLowerCase()}.svg`}
@@ -69,7 +69,7 @@ export default function CountriesComparisonFooter({
               <p>{selectedCountries[1].name}</p>
             </div>
           ) : (
-            <div className="w-[60px] h-[40px] border flex items-center justify-center self-center">
+            <div className="flex h-[40px] w-[60px] items-center justify-center self-center border">
               2
             </div>
           )}
@@ -78,7 +78,7 @@ export default function CountriesComparisonFooter({
         {selectedCountries.length === 2 ? (
           <a
             href={`/country/compare/${selectedCountries[0].code}-${selectedCountries[1].code}`}
-            className="bg-[#1d1d1f] text-white px-8 py-4 rounded"
+            className="rounded bg-[#1d1d1f] px-8 py-4 text-white"
           >
             See the comparison
           </a>
