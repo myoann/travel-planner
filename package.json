@@ -14,17 +14,17 @@
     "@urql/next": "^1.1.1",
     "graphql": "^16.9.0",
     "next": "^14.2.5",
-    "openai": "^4.52.7",
+    "openai": "^4.56.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "unsplash-js": "^7.0.19",
     "urql": "^4.1.0"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^6.4.6",
+    "@testing-library/jest-dom": "^6.4.8",
     "@testing-library/react": "^16.0.0",
     "@types/jest": "^29.5.12",
-    "@types/node": "^20.14.10",
+    "@types/node": "^22.4.0",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "eslint": "^8.57.0",
@@ -32,12 +32,12 @@
     "eslint-config-prettier": "9.1.0",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
-    "postcss": "^8.4.39",
-    "prettier": "^3.3.2",
-    "prettier-plugin-tailwindcss": "^0.6.5",
-    "tailwindcss": "^3.4.4",
-    "typescript": "^5.5.3",
+    "postcss": "^8.4.41",
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.6",
+    "tailwindcss": "^3.4.10",
+    "typescript": "^5.5.4",
     "ts-node": "^10.9.2",
-    "ts-jest": "^29.2.2"
+    "ts-jest": "^29.2.4"
   }
 }
