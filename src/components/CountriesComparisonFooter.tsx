@@ -1,8 +1,8 @@
 "use client";
 
-import { TCountry } from "@/types";
-
 import Image from "next/image";
+
+import { TCountry } from "@/types";
 
 type TProps = {
   selectedCountries: TCountry[];

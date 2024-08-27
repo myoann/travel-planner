@@ -1,3 +1,4 @@
+import { redirect } from "next/navigation";
 import { gql } from "@urql/core";
 
 import { TCountry, TOption } from "@/types";
@@ -5,7 +6,6 @@ import { getClient } from "@/utils/getItems";
 import { findSuitableCountryWithOpenAI } from "@/utils/prompts";
 
 import CountryCardList from "@/components/CountryCardList";
-import { redirect } from "next/navigation";
 
 const CountriesQuery = gql`
   query {
